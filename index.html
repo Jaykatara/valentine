@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff4e50, #f9d423);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 350px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+      animation: pop 1s ease;
+    }
+    h1 { color: #ff4e50; }
+    p { font-size: 16px; color: #333; }
+    button {
+      background: #ff4e50;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover { background: #e43f41; }
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Hey You ❤️</h1>
+    <p>
+      I don’t know the perfect words,<br>
+      but my heart knows one truth —<br><br>
+      Life feels better, warmer, and brighter<br>
+      whenever you’re around ✨
+    </p>
+    <p>
+      So today, I just want to ask you one thing…
+    </p>
+    <h2>Will you be my Valentine? 💕</h2>
+    <button onclick="yes()">YES 💖</button>
+  </div>
+
+  <script>
+    function yes() {
+      document.body.innerHTML = `
+        <div style="text-align:center; color:white;">
+          <h1>YAY!!! 🎉💞</h1>
+          <p>You just made my world brighter 🌍✨</p>
+          <p>Happy Valentine’s Day ❤️</p>
+        </div>
+      `;
+    }
+  </script>
+
+</body>
+</html>
